@@ -1,0 +1,32 @@
+{{# partial "titulo" }}	
+	<title>PixlPapers</title>
+{{/partial}}
+		
+{{# partial "contenido" }}  
+
+	<h1 style="color:white; font-weight:bold">New wallpaper</h1>
+
+		<form action="/upload/new" method="POST">
+
+	<div class="jumbotron">
+
+		<div class="row" style="text-align:center">
+			<p style="color:white">Please submit only simple and minimalist wallpapers. Check the wallpaper feed to see some examples.</p>
+		</div>
+
+		<div class="row">
+		  	<div class="col-md-12">
+			  	<table class="table">
+					<td style="border-top: 1px solid transparent"><input type="text" class="form-control" name="uploader" placeholder="Uploader"></td>
+					<td style="border-top: 1px solid transparent"><input type="text" class="form-control" name="url" placeholder="Image URL"></td>
+					<td style="border-top: 1px solid transparent"><button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span> Upload</button></td>
+				</table>
+			</div>
+	  	</div>
+	 </div>
+
+		</form>
+
+{{/partial}}
+				
+{{> layout.hbs }}

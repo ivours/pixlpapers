@@ -1,0 +1,23 @@
+{{# partial "titulo" }}	
+	<title>PixlPapers</title>
+{{/partial}}
+		
+{{# partial "contenido" }}  
+
+	<h1 style="color:white; font-weight:bold">New wallpaper</h1>
+
+		<form action="/upload/new" method="POST">
+
+	<div class="jumbotron">
+
+		<div class="row">
+			<p style="color:white">Your wallpaper has been submitted succesfully. If everything is OK, it'll be added to the wallpaper feed soon.</p>
+		</div>
+
+	 </div>
+
+		</form>
+
+{{/partial}}
+				
+{{> layout.hbs }}

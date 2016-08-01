@@ -1,0 +1,53 @@
+{{# partial "titulo" }}	
+	<title>PixlPapers</title>
+{{/partial}}
+		
+{{# partial "contenido" }}
+	
+<div class="jumbotron">
+
+	{{#if wallpaper}}
+
+		<div style="text-align:center">
+
+			<a href="{{wallpaper.url}}" class="thumbnail">
+				<img src="" id="myImage" style="width:640px;height:360px;" />
+			</a>
+
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById("myImage").src = "{{wallpaper.url}}" ;
+		</script>
+
+		<div style="text-align:center">
+
+		<p style="color:white"> Uploader: {{wallpaper.uploader}} </p>
+
+		</div>
+
+		<div style="text-align:center ; font-weight:bold ; font-size: 200%;">
+
+			<a href="/create"> Create </a>
+
+		</div>
+
+		<div style="text-align:center ; font-weight:bold ; font-size: 200%;">
+
+			<a href="/reject"> Reject </a>
+
+		</div>
+
+	{{/if}}
+
+	{{#unless wallpaper}}
+
+		<p style="color:white">There are no pending wallpapers.</p>
+
+	{{/unless}}
+
+</div>
+
+{{/partial}}
+				
+{{> layout.hbs }}

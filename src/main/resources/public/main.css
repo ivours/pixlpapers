@@ -1,0 +1,66 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: 031638;
+}
+
+.glyphicon.glyphicon-chevron-left {
+    font-size: 75px;
+}
+
+.glyphicon.glyphicon-chevron-right {
+    font-size: 75px;
+}
+
+.glyphicon.glyphicon-refresh {
+    font-size: 75px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+h1 {
+	text-align:center; 
+	color:05486E;
+}
+
+td {
+	border-top: 1px solid transparent; 
+	border-bottom: 1px solid transparent;
+	color: black;
+	text-align: center;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: ACFF6B;
+}
+
+.jumbotron {
+	background-color:000421;
+}
+
+.thumbnail {
+  background-color: 000421;
+  border-color: 000421;
+  display:inline-block;
+}
+
+hr {
+	border-color:black;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+ul {
+  list-style-type:none;
+}
